@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('img.png');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+}
+
+.textarea-container {
+    display: flex; /* Enables flexbox layout */
+    flex-direction: column; /* Arranges children in a column */
+    align-items: center; /* Centers children horizontally */
+    color: white; /* Sets text color to white */
+    font-weight: bold;
+}
+
+#restricted-textarea {
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    transition: border-color 0.3s ease;
+}
+
+#char-count {
+    margin-top: 10px;
+    font-size: 14px;
+    color: white; /* Ensures the text color remains white */
+}
+
+#restricted-textarea.limit-reached {
+    border-color: red;
+}
